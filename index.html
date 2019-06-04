@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <fieldset style='width:50%;background: aliceblue'>
+            <legend>Datos personales</legend>
+            <form action="datos.php" method="POST">
+                
+                
+                <label for="nombre">Nombre</label>
+                <input type="text" name="name" id="nombre"/><br />
+                
+                
+                
+                Apellido
+                <input type="text" name="apellido" id=""><br />
+                Fecha de nacimiento
+                <input type="date" name="fnac" id=""><br />
+                <label for="idiomas">Idiomas</label><br />
+                
+                <input type="checkbox" name="idioma[]" id="idiomas" value='ingles' > Inglés <br/>
+                <input type="checkbox" name="idioma[]" value = 'rumano'> Rumano<br/>
+                <input type="checkbox" name="idioma[]" value = 'frances'> Francés<br/>
+                <input type="checkbox" name="idioma[]" value = 'aragones'> Aragonés<br/>
+                Estudios<br />
+                <select name="estudios" id="">
+                    <option value="eso">ESO</option>
+                    <option value="Giclo medio">Ciclo medio</option>
+                    <option value="Giclo Superior">Ciclo superior</option>
+                    <option value="Grado">Grado</option>
+                    <option value="Licenciatura">Licenciatura</option>
+                </select>
+                <br />
+                Genero<br />
+                <input type="radio" name="genero" value='mujer' > Mujer<br/>
+                <input type="radio" name="genero" value = 'hombre'> Hombre<br/>
+                <input type="radio" name="genero" value = 'no'> No quiero aportar<br/>
+                
+
+
+
+                <input type="submit" value="Enviar">
+            </form>
+        </fieldset>
+
+    </body>
+</html>
